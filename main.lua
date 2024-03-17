@@ -73,6 +73,57 @@ print("Begin: " .. begin .. "\nEnd: " .. ending) -- find the position
 
 print(string.gsub(lowCase, "o", "!")) -- Hell! W!rld  2 - replace o with ! and show how many is replaced
 
+--[[ If statements
+    
+false are false and nill, other are true 
+== equal
+~= means NOT EQUAL in Lua (not like in JS !=)]]
 
+-- if more, less, more/equal, less/equal
+local age = 19
+
+if age > 17 and age <= 60 then
+  print("You may enter") -- true
+end 
+
+if age > 20 or age <= 10 then
+  print("You may enter") -- false
+end
+
+if not (age < 15) then 
+  print("Not false equals true") -- true
+end
+
+-- if equal
+local name = "Tom"
+
+if name == "Tom" then 
+  print("Hi Tom")
+end
+
+-- if elseif else
+
+local yourAge = 9
+
+if yourAge > 30 then
+  print("30+")
+elseif yourAge > 17 then 
+  print("of legal age")
+else 
+   print("kid") -- kid
+end
+
+if type(yourAge) == "number" then 
+ print("The value is a number") -- The value is a number
+end
+--[[in the example above there will be executed 2 values - "kid" and "The value is a number".
+    the if statement could be inside another if statement]]
+
+-- ternary operator
+
+local newAge = 33
+
+local old = newAge > 30 and true or false 
+  print old -- true
 
 
