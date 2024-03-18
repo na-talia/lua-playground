@@ -126,4 +126,40 @@ local newAge = 33
 local old = newAge > 30 and true or false 
   print old -- true
 
+-- Loops
+-- for loop
+
+for i = 1, 10, 2 do -- print i from 1 to 10 adding 2 each time
+  print(i) -- 1 3 5 7 9
+end
+
+for i = 10, 1, -1 do -- print i from 10 to 1 decreasing 1 each time
+  print(i) -- 10 9 8 7 6 5 4 3 2 1
+end
+
+local array = {54, 5, 52.25, 8, 0}
+for i = 1, #array do -- # is the length of the array
+  print(array[i]) -- 54, 5, 52.25, 8, 0
+end
+
+local people = 10
+while people > 0 do
+people = people - 1
+  print("People left at party: " .. people) -- will be executed only if people > 0. If not, will be not printed at all
+end
+
+repeat
+  print("Hi there") -- will be executed only if people > 0. If not, will be printed at least once
+people = people - 1
+until people < 0
+
+local run = true
+local runtime = 0
+while run do 
+  print("Running")
+if runtime == 10 then
+  run ==false
+end
+runtime = runtime + 1
+end
 
