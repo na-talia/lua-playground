@@ -180,7 +180,7 @@ local true_answer = num1 + num2
 io.write("Input " .. num1 .. " + " .. num2 .. ": ")
 local ans = io.read()
 
-if tomunber(ans) == true_answer then
+if tonumber(ans) == true_answer then
 print("You are correct!")
 else
 print("\nYour answer is:" .. ans .. " and this is wrong. Try again!"
