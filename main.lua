@@ -163,25 +163,3 @@ end
 runtime = runtime + 1
 end
 
--- User Input
-
-print("What is 10 + 5?")
-local answer = io.read() -- reads input from the user through the standard input
-print ("\nYour answer is " .. answer) -- Will write the answers in the next lines
-
-io.write("Input 10 + 5: ") -- Will write the answers in the same line
-local answer = io.read()
-print ("\nYour answer is " .. answer) 
-
--- Basic input game
-
-local num1, num2 = 10, 5
-local true_answer = num1 + num2
-io.write("Input " .. num1 .. " + " .. num2 .. ": ")
-local ans = io.read()
-
-if tomunber(ans) == true_answer then
-print("You are correct!")
-else
-print("\nYour answer is:" .. ans .. " and this is wrong. Try again!"
-end
