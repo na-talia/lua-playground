@@ -13,13 +13,6 @@ for i = 1, #arr do
 end
 table.sort(arr) -- 4, 5, 10, 20, 89
 
--- Insert a value into array
-
-table.insert(arr, 2, "lol") -- insert "lol" into the array to index 2
-
--- Remove a value from array
-table.remove(arr, 4) -- remove 50 from the array
-
 -- Concat values
 
 local array-string = {"Hello", "my", "name", "is", "human name"}
@@ -37,3 +30,11 @@ for i = 1, #big-arr do
     print(big-arr[i][j]) -- gfts fsf gfgfgfjh 78 54 d 555 7
   end
 end
+
+-- Insert a value into array
+
+table.insert(arr, 2, "lol") -- insert "lol" into the array to index 2
+
+-- Remove a value from array
+table.remove(arr, 4) -- remove 50 from the array
+
