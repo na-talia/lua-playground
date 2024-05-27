@@ -1,3 +1,5 @@
+-- Basic functions
+
 local function displayAge(age) 
   age = age or 5
   print("You are " .. age .. "years old now")
